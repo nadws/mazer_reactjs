@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Link } from "@inertiajs/inertia-react";
+import { Link, Head } from "@inertiajs/inertia-react";
 export default function Header() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const dropdownTarget = useRef();

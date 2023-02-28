@@ -47,32 +47,6 @@ export default function Dashboard({ user }) {
 
     return (
         <>
-            <Head>
-                <title>Dashboard</title>
-                <link
-                    rel="stylesheet"
-                    href="/css/theme/assets/css/main/app.css"
-                />
-                <link
-                    rel="shortcut icon"
-                    href="/css/theme/assets/images/logo/favicon.svg"
-                    type="image/x-icon"
-                />
-                <link
-                    rel="shortcut icon"
-                    href="/css/theme/assets/images/logo/favicon.png"
-                    type="image/png"
-                />
-
-                <link
-                    rel="stylesheet"
-                    href="/css/theme/assets/css/shared/iconly.css"
-                />
-                <link
-                    rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-                />
-            </Head>
             <div id="app">
                 <div id="main" className="layout-horizontal">
                     <Header />
