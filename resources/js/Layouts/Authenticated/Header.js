@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { Link } from "@inertiajs/inertia-react";
 export default function Header() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const dropdownTarget = useRef();
@@ -90,10 +91,13 @@ export default function Header() {
                     <div className="container">
                         <ul>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link
+                                    href={route("dashboard")}
+                                    className="menu-link"
+                                >
                                     <i className="bi bi-grid-fill" />
                                     <span>Dashboard</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item has-sub">
                                 <a href="#" className="menu-link">
