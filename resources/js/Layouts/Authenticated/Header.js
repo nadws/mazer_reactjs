@@ -99,6 +99,15 @@ export default function Header() {
                                     <span>Dashboard</span>
                                 </Link>
                             </li>
+                            <li className="menu-item">
+                                <Link
+                                    href={route("purchase")}
+                                    className="menu-link"
+                                >
+                                    <i className="bi bi-grid-fill" />
+                                    <span>Purchase</span>
+                                </Link>
+                            </li>
                             <li className="menu-item has-sub">
                                 <a href="#" className="menu-link">
                                     <i className="bi bi-stack" />

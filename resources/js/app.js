@@ -3,7 +3,7 @@ require("./bootstrap");
 import React from "react";
 import { render } from "react-dom";
 import { createInertiaApp } from "@inertiajs/inertia-react";
-import { InertiaProgress } from "@inertiajs/progress";
+// import { InertiaProgress } from "@inertiajs/progress";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const appName =
@@ -17,15 +17,15 @@ createInertiaApp({
     },
 });
 
-InertiaProgress.init({
-    delay: 250,
+// InertiaProgress.init({
+//     delay: 250,
 
-    // The color of the progress bar.
-    color: "red",
+//     // The color of the progress bar.
+//     color: "red",
 
-    // Whether to include the default NProgress styles.
-    includeCSS: true,
+//     // Whether to include the default NProgress styles.
+//     includeCSS: true,
 
-    // Whether the NProgress spinner will be shown.
-    showSpinner: true,
-});
+//     // Whether the NProgress spinner will be shown.
+//     showSpinner: true,
+// });

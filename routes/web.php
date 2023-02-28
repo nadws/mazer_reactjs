@@ -28,6 +28,9 @@ Route::get('/', function () {
 
 
 Route::get('/dashboard', [User::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/purchase',function(){
+    return Inertia::render('prototype/purchase');
+})->middleware(['auth', 'verified'])->name('purchase');
 Route::get('/delete/{id}', [User::class, 'delete'])->middleware(['auth', 'verified'])->name('delete');
 
 require __DIR__ . '/auth.php';
